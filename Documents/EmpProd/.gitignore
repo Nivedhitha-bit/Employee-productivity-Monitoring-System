@@ -1,0 +1,37 @@
+# --- Environment and Dependencies ---
+# Virtual Environments (Venv/Conda)
+.venv/
+venv/
+env/
+# Pip environment files
+pip-log.txt
+pip-delete-this-file.txt
+htmlcov/
+
+# --- Python Compilation and Cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Cython
+*.so
+
+# --- IDE/OS Files ---
+# Mac OS
+.DS_Store
+# Windows/IDE files
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Streamlit, Pandas, and Data Files (CRITICAL) ---
+# This ignores the folder where the historical scores are saved.
+# This keeps sensitive performance data off the public repository.
+data/processed/scores_historical.csv
+data/logs/
+
+# Streamlit-specific cache
+.streamlit/
+
+# Jupyter/IPython Notebook files
+.ipynb_checkpoints
